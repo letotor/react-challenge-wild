@@ -1,50 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Contact from './components/Contact'
 import './style.css';
 
 
- const contact ={name:"Emmanuel", email:"emmanuel@gmail.com",tel:"06060606"}
-
+//  const contact ={name:"Emmanuel", email:"emmanuel@gmail.com",tel:"06060606"}
 
 
 export const App = (
-  // write your React Code here
-   
-
-
-
   <div>
     <h1 className="text-center">My contacts list 📱</h1>
-
-    <div>
-
       <div>
-          <h3>{contact.name}</h3>
-          <h4>{contact.email}</h4>
-          <h4>{contact.tel}</h4>
-          <button>Suppresion</button>
-
-           <h3>{contact.name}</h3>
-          <h4>{contact.email}</h4>
-          <h4>{contact.tel}</h4>
-          <button>Suppresion</button>
-
-           <h3>{contact.name}</h3>
-          <h4>{contact.email}</h4>
-          <h4>{contact.tel}</h4>
-          <button>Suppresion</button>
-
-           <h3>{contact.name}</h3>
-          <h4>{contact.email}</h4>
-          <h4>{contact.tel}</h4>
-          <button>Suppresion</button>
-          
-           <h3>{contact.name}</h3>
-          <h4>{contact.email}</h4>
-          <h4>{contact.tel}</h4>
-          <button>Suppresion</button>
-    </div>
-    </div>
+         <Contact />
+         <Contact />
+         <Contact />
+         <Contact />
+         <Contact />
+      </div>
   </div>
 );
 
