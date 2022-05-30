@@ -1,16 +1,22 @@
 import React from "react";
-import { Fragment } from "react/cjs/react.production.min";
 
-const  Contact = ({name, tel, email ,isDeletable})=>{
-    console.log(`${name} ${tel} ${email} ${isDeletable}`)
-   return(
-        <Fragment className="friend-item">
-            <h3>{name}</h3>
-            <h4>{tel}</h4>
-            <h4>{email}</h4>
-            {isDeletable &&<button>suppression</button>}
-        </Fragment>
-   )
+const logging = (msg)=>{
+    console.log('suppresion')
+    alert(`${msg} . Voulez vous confirmer?` );
 }
+  
+const  Contact = ({name, phone, email ,isDeletable})=>{
+    // console.log(`${name} ${phone} ${email} ${isDeletable}`)
+   return(
+        <div className="friend-item">
+            <h3>{name}</h3>
+            <h4>{phone}</h4>
+            <h4>{email}</h4>
+            {isDeletable &&<button  onClick={() => logging(`Vous avez cliqué sur ${name}`)}>suppression</button>}
+           
+        </div>
+   )
+    }
+
 
 export default Contact;
